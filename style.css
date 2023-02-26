@@ -1,0 +1,202 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    background: #0A0C1C;
+    color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
+    /* font-family: 'Lexend Deca', sans-serif; */
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+    isolation: isolate;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container {
+    /* max-width: 1110px; */
+    max-width: 446px;
+    margin: auto 6%;
+    background: #1B1937;
+    box-shadow: 0 1.25rem 1.25rem -0.625rem rgba(23, 25, 41, 0.203087);
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.container-img {
+    background-color: #AB5CDB;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+img {
+    border-radius: 0.5rem 0.5rem 0 0;
+    mix-blend-mode: multiply;
+    opacity: 0.75;
+}
+
+.conatiner-txt {
+    padding: 4.2% 9.7% 4.2% 9.7%;
+    text-align: center;
+    max-width: 570px;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 1.75rem;
+    line-height: 2rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.insights {
+    color: #AB5CDB;
+
+}
+
+.txt-summary {
+    font-weight: 400;
+    font-size: 0.938rem;
+    line-height: 1.563rem;
+    mix-blend-mode: normal;
+    opacity: 0.75;
+    margin-bottom: 2.5rem;
+}
+
+h2 {
+
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 1.813rem;
+}
+
+
+.stats-txt {
+    font-family: 'Lexend Deca';
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 1.563rem;
+    letter-spacing: 0.063rem;
+    text-transform: uppercase;
+    mix-blend-mode: normal;
+    opacity: 0.6;
+    margin-bottom: 1.5rem;
+}
+
+
+@media screen and (min-width: 900px) {
+    .container {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row-reverse;
+        max-width: 1110px;
+    }
+
+    .container-img {
+        border-radius: 0 0.5rem 0.5rem 0;
+        flex: 1 1 49%;
+    }
+
+
+    img {
+        border-radius: 0 0.5rem 0.5rem 0;
+        height: 446px;
+    }
+
+    .conatiner-txt {
+        max-height: 446px;
+        flex: 1 1 51%;
+        padding: 5.6%;
+        text-align: start;
+    }
+
+    h1 {
+        font-weight: 700;
+        font-size: 2.25rem;
+        line-height: 2.75rem;
+        /* padding-right: 50px; */
+    }
+
+    .txt-summary {
+        margin-top: 1.5rem;
+        /* padding-right: 80px;*/
+        margin-bottom: 4.5rem;
+    }
+
+    .stats {
+        display: flex;
+        gap: 3.75rem;
+    }
+
+    .info {
+        flex-direction: column;
+
+    }
+
+}
+
+
+.attribution {
+    font-size: 0.688rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
